@@ -19,7 +19,7 @@ function ToDoList(){
     return (
         <>
             <div className='to-do-list-container'>
-                <h1>To do list</h1>
+                <h1>To-do-list</h1>
                 <input type='text' id='task-input' value={newTask} onChange={handleInputChange} placeholder='Add a task' />
                 <button type='submit' onClick={addTask}>Add task</button>
                 <div className='list'>

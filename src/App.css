@@ -4,14 +4,40 @@
     box-sizing: border-box;
 }
 
+h1 {
+    margin-bottom: 5px;
+    color: white;
+}
+
 .to-do-list-container {
     width: 90vw;
-    background-color: #bababa;
+    background-color: #2C2C2A;
     padding: 10px;
     border: 1px solid black;
     border-radius: 10px;
     text-align: center;
     margin: 20px auto;
+}
+
+#task-input {
+    padding: 5px;
+    width: 60%;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+#task-input + button {
+    background-color: #007ed2;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    transition: transform 1s ease;
+}
+
+#task-input + button:hover {
+    transform: scale(1.1);
 }
 
 .list {
@@ -23,7 +49,7 @@
     border-bottom: 1px solid black;
 }
 
-.list input {
+.list input[type='checkbox'] {
     margin-right: 5px;
     font-size: 20rem;
 }
