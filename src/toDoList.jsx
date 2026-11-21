@@ -9,11 +9,13 @@ function ToDoList(){
     }
 
     function addTask(){
-        setTask(t => [...t, newTask]);
-        setNewTask('');
+        if(newTask.length > 0){
+            setTask(t => [...t, newTask]);
+            setNewTask('');
+        }   
     }
 
-    const taskList = task.map(t => <p><label><input type='checkbox'/>{t}</label></p>)
+    const taskList = task.map(t => <p><label><input type='checkbox'/><span>{t}</span></label></p>)
 
 
     return (
