@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.to-do-list-container {
+    width: 90vw;
+    background-color: #bababa;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+}
