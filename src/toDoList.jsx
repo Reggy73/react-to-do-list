@@ -13,7 +13,7 @@ function ToDoList(){
         setNewTask('');
     }
 
-    const taskList = task.map(t => <p>{t}</p>)
+    const taskList = task.map(t => <p><label><input type='checkbox'/>{t}</label></p>)
 
 
     return (
@@ -22,7 +22,7 @@ function ToDoList(){
                 <h1>To do list</h1>
                 <input type='text' id='task-input' value={newTask} onChange={handleInputChange} placeholder='Add a task' />
                 <button type='submit' onClick={addTask}>Add task</button>
-                <div>
+                <div className='list'>
                     {taskList}
                 </div>
             </div>

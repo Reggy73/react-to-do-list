@@ -13,3 +13,17 @@
     text-align: center;
     margin: 20px auto;
 }
+
+.list {
+    text-align: left;
+}
+
+.list p {
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+
+.list input {
+    margin-right: 5px;
+    font-size: 20rem;
+}
