@@ -15,7 +15,11 @@ function ToDoList(){
         }   
     }
 
-    const taskList = task.map(t => <p><label><input type='checkbox'/><span>{t}</span></label></p>)
+    // function moveTask() {
+
+    // }
+
+    const taskList = task.map((t, index) => <p key={index}><label><input type='checkbox'/><span>{t}</span></label><span><button>Move up</button><button>Delete</button></span></p>)
 
 
     return (
