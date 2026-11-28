@@ -15,11 +15,17 @@ function ToDoList(){
         }   
     }
 
+    function deleteTask(index){
+        const updatedTasks = task.filter((_, i) => i !== index);
+
+        setTask(updatedTasks);
+    }
+
     // function moveTask() {
 
     // }
 
-    const taskList = task.map((t, index) => <p key={index}><label><input type='checkbox'/><span>{t}</span></label><span><button>Move up</button><button>Delete</button></span></p>)
+    const taskList = task.map((t, index) => <p key={index}><label><input type='checkbox'/><span>{t}</span></label><span><button>Move up</button><button onClick={() => deleteTask(index)}>Delete</button></span></p>)
 
 
     return (
